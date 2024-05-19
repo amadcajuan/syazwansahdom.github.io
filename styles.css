@@ -7,10 +7,24 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #333;
+  background: linear-gradient(45deg, #8000ff, #0083fd, #1eff00);
+  background-size: 200% 200%;
+  animation: gradient-animation 10s ease infinite;
   color: #fff;
   padding: 20px;
   text-align: center;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 header h1 {
